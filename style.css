@@ -1,82 +1,155 @@
-/* Modern font */
+/* Global styling */
+
 body {
+
 font-family: 'Raleway', sans-serif;
+
 margin: 0;
 padding: 0;
-background: linear-gradient(135deg, #667eea, #764ba2);
-color: #333;
+
+background: linear-gradient(135deg, #4facfe, #00f2fe);
+
+min-height: 100vh;
+
 }
+
 
 /* Header */
+
 .header {
+
 text-align: center;
-padding: 40px;
+
+padding: 50px 20px;
+
 color: white;
+
 }
 
-.header h1 {
-font-size: 40px;
+
+.name {
+
+font-size: 42px;
+
+font-weight: 700;
+
+letter-spacing: 1px;
+
 margin-bottom: 10px;
+
 }
+
 
 .subtitle {
+
 font-size: 18px;
-opacity: 0.9;
+
+font-weight: 400;
+
+opacity: 0.95;
+
 }
 
-/* Container grid */
+
+/* Container */
+
 .container {
+
 display: grid;
+
 grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
 gap: 30px;
+
 padding: 40px;
-max-width: 1000px;
+
+max-width: 1100px;
+
 margin: auto;
+
 }
 
-/* Glass cards */
+
+/* Cards */
+
 .card {
-background: rgba(255, 255, 255, 0.15);
-backdrop-filter: blur(10px);
+
+background: rgba(255,255,255,0.18);
+
 border-radius: 15px;
+
 padding: 25px;
+
 text-align: center;
+
 color: white;
-box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+
+box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+
+backdrop-filter: blur(12px);
+
 transition: 0.3s;
+
 }
 
-/* Hover animation */
+
 .card:hover {
-transform: translateY(-10px) scale(1.03);
-box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+
+transform: translateY(-12px);
+
+box-shadow: 0 20px 40px rgba(0,0,0,0.35);
+
 }
+
 
 /* Buttons */
+
 .btn {
-background: linear-gradient(45deg, #00c6ff, #0072ff);
+
+background: linear-gradient(45deg, #ff512f, #dd2476);
+
 border: none;
-padding: 12px 25px;
+
+padding: 12px 26px;
+
 margin: 10px;
-color: white;
+
 font-size: 16px;
-border-radius: 25px;
+
+font-weight: 600;
+
+color: white;
+
+border-radius: 30px;
+
 cursor: pointer;
+
 transition: 0.3s;
+
 }
 
-/* Button hover */
+
 .btn:hover {
-background: linear-gradient(45deg, #ff512f, #dd2476);
-transform: scale(1.05);
+
+background: linear-gradient(45deg, #11998e, #38ef7d);
+
+transform: scale(1.07);
+
 }
+
 
 /* Footer */
-.footer {
-text-align: center;
-padding: 20px;
-color: white;
-margin-top: 30px;
-font-size: 14px;
-}
 
+.footer {
+
+text-align: center;
+
+padding: 20px;
+
+color: white;
+
+font-size: 14px;
+
+margin-top: 20px;
+
+}
