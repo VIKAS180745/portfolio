@@ -5,13 +5,15 @@ body {
     margin: 0;
     padding: 0;
 
-    /* Aurora / Mesh Gradient Background */
-    background: 
-        radial-gradient(circle at 15% 20%, rgba(255, 120, 120, 0.6), transparent 40%),
-        radial-gradient(circle at 80% 25%, rgba(255, 200, 120, 0.6), transparent 40%),
-        radial-gradient(circle at 30% 80%, rgba(120, 255, 180, 0.6), transparent 40%),
-        radial-gradient(circle at 85% 75%, rgba(120, 180, 255, 0.6), transparent 40%),
-        linear-gradient(135deg, #f6d365, #fda085, #84fab0, #60a3ff);
+    /* Aurora Mesh Gradient Background (Improved) */
+    background-color: #60a3ff; /* fallback */
+
+    background-image:
+        radial-gradient(circle at 15% 20%, rgba(255, 120, 120, 0.65) 0%, transparent 45%),
+        radial-gradient(circle at 80% 25%, rgba(255, 200, 120, 0.65) 0%, transparent 45%),
+        radial-gradient(circle at 30% 80%, rgba(120, 255, 180, 0.65) 0%, transparent 45%),
+        radial-gradient(circle at 85% 75%, rgba(120, 180, 255, 0.65) 0%, transparent 45%),
+        linear-gradient(135deg, #f6d365 0%, #fda085 25%, #84fab0 60%, #60a3ff 100%);
 
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -21,144 +23,94 @@ body {
 }
 
 
-
 /* Header */
 
 .header {
-
-text-align: center;
-
-padding: 50px 20px;
-
-color: white;
-
+    text-align: center;
+    padding: 60px 20px;
+    color: white;
 }
 
 
 .name {
-
-font-size: 42px;
-
-font-weight: 700;
-
-letter-spacing: 1px;
-
-margin-bottom: 10px;
-
+    font-size: 44px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
 }
 
 
 .subtitle {
-
-font-size: 18px;
-
-font-weight: 400;
-
-opacity: 0.95;
-
+    font-size: 18px;
+    font-weight: 400;
+    opacity: 0.95;
 }
 
 
 /* Container */
 
 .container {
-
-display: grid;
-
-grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-
-gap: 30px;
-
-padding: 40px;
-
-max-width: 1100px;
-
-margin: auto;
-
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 40px;
+    max-width: 1100px;
+    margin: auto;
 }
 
 
 /* Cards */
 
 .card {
+    background: rgba(255,255,255,0.18);
+    border-radius: 15px;
+    padding: 25px;
+    text-align: center;
+    color: white;
 
-background: rgba(255,255,255,0.18);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.25);
 
-border-radius: 15px;
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px); /* Safari support */
 
-padding: 25px;
-
-text-align: center;
-
-color: white;
-
-box-shadow: 0 10px 25px rgba(0,0,0,0.25);
-
-backdrop-filter: blur(12px);
-
-transition: 0.3s;
-
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 
 .card:hover {
-
-transform: translateY(-12px);
-
-box-shadow: 0 20px 40px rgba(0,0,0,0.35);
-
+    transform: translateY(-12px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.35);
 }
 
 
 /* Buttons */
 
 .btn {
-
-background: linear-gradient(45deg, #ff512f, #dd2476);
-
-border: none;
-
-padding: 12px 26px;
-
-margin: 10px;
-
-font-size: 16px;
-
-font-weight: 600;
-
-color: white;
-
-border-radius: 30px;
-
-cursor: pointer;
-
-transition: 0.3s;
-
+    background: linear-gradient(45deg, #ff512f, #dd2476);
+    border: none;
+    padding: 12px 26px;
+    margin: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
 
 
 .btn:hover {
-
-background: linear-gradient(45deg, #11998e, #38ef7d);
-
-transform: scale(1.07);
-
+    background: linear-gradient(45deg, #11998e, #38ef7d);
+    transform: scale(1.07);
 }
 
 
 /* Footer */
 
 .footer {
-
-text-align: center;
-
-padding: 20px;
-
-color: white;
-
-font-size: 14px;
-
-margin-top: 20px;
-
+    text-align: center;
+    padding: 20px;
+    color: white;
+    font-size: 14px;
+    margin-top: 20px;
 }
-
