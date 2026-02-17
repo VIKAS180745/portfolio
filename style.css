@@ -37,14 +37,18 @@ body {
     font-weight: 700;
     letter-spacing: 1px;
     margin-bottom: 10px;
+    
+    color: #ff3b3b;
 }
 
 
 .subtitle {
     font-size: 18px;
     font-weight: 400;
-    opacity: 0.95;
+    
+    color: #ff4d4d;
 }
+
 
 
 /* Container */
@@ -114,4 +118,5 @@ body {
     font-size: 14px;
     margin-top: 20px;
 }
+
 
